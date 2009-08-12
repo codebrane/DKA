@@ -1,0 +1,6 @@
+<module>
+	<inherits name='com.google.gwt.user.User'/>
+  <inherits name="com.google.gwt.http.HTTP"/>
+  <entry-point class='net.skyesoft.nhs.dka.client.DKA'/>
+	<stylesheet src='DKA.css'/>
+</module>

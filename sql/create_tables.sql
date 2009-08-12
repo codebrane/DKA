@@ -1,0 +1,125 @@
+CREATE TABLE generalinfo (
+	id     								INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	StudyNo								char(255),
+	Age										char(3),
+	DaysInPatient					char(10),
+	HCO3									char(255),
+	PH										char(255),
+	PHRangeUpper					char(255),
+	PHRangeLower					char(255),
+	Sex										char(10),
+	TypeOfDiabetes				char(20),
+	SourceOfReferral			char(20),
+	Symptoms							char(10),
+	BMGreaterThan15				char(10),
+	Ketones								char(20),
+	DiagnosisConfirmed		char(10),
+	BloodGlucoseLevelOnArrival		char(30),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE educationandfollowup (
+	id     																	INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	StudyNo																	char(255),
+	Other																		char(255),
+	AttendedDiabetesCourse									char(255),
+	NoEducationProvided											char(10),
+	CommercialLeaflets											char(10),
+	VerbalUpdate														char(10),
+	Ketocard																char(10),
+	DiabetesWebsite													char(10),
+	AfterPreviousDKA												char(10),
+	InformationLeaflet											char(10),
+	OnlineDiabetesResources									char(10),
+	AtTimeOfInitialDiagnosis								char(10),
+	PatientHasAppropriateFollowUpInPlace		char(10),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE ivfluids (
+	id     								INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	StudyNo								char(255),
+	Hour									char(255),
+	NaCl									char(255),
+	NaClRateCorrect				char(255),
+	BMLessThan14					char(255),
+	TenPercentDextrose		char(255),
+	DextroseRateCorrect		char(255),
+	KPlus									char(255),
+	KPlusReplacement			char(255),
+	InsulinUnitsPerHour		char(255),
+	VolumeInfused					char(255),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE routinebloods (
+	id     								INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	StudyNo								char(255),
+	Hour									char(255),
+	UEs										char(255),
+	Labglu								char(255),
+	Venabgs								char(255),
+	Bm										char(255),
+	Bicarbonate						char(255),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE transfertoscinsulin (
+	id     								INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	StudyNo								char(255),
+	HoursOfIVInsulin			char(255),
+	OralHypoglycemic_1		char(255),
+	OralHypoglycemic_2		char(255),
+	OralHypoglycemic_3		char(255),
+	TotalDailyDose_1			char(255),
+	TotalDailyDose_2			char(255),
+	TotalDailyDose_3			char(255),
+	Insulin_1							char(255),
+	Insulin_2							char(255),
+	Insulin_3							char(255),
+	Insulin_4							char(255),
+	InsulinDose_1					char(255),
+	InsulinDose_2					char(255),
+	InsulinDose_3					char(255),
+	InsulinDose_4					char(255),
+	InsulinRegime_1				char(255),
+	InsulinRegime_2				char(255),
+	InsulinRegime_3				char(255),
+	InsulinRegime_4				char(255),
+	Device_1							char(255),
+	Device_2							char(255),
+	Device_3							char(255),
+	Device_4							char(255),
+	IVInsulinStopped			char(255),
+	BicarbonateNormalised	char(255),
+	UrineKetonesCleared		char(255),
+	TwoMeals							char(255),
+	RestartingLongActingInsulinAnalogue	char(255),
+	PatientOnLongActingInsulinAnalogue	char(255),
+	LongActingInsulinAnalogueContinued	char(255),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE treatmentandinvestigation (
+	id     								INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	StudyNo								char(255),
+	CauseDetails					char(255),
+	MSSU									char(20),
+	FBC										char(20),
+	ECG										char(20),
+	CauseIdentified				char(10),
+	CXR										char(20),
+	ViralTitres						char(20),
+	Antibiotics						char(10),
+	FluidBalanceChart			char(10),
+	NGTube								char(10),
+	CentralLine						char(10),
+	IntensiveCare					char(10),
+	Catheter							char(10),
+	FollowUp							char(10),
+	BloodCultures					char(255),
+	TimeIntervalFromAdmissionToFluids							char(255),
+	TimeIntervalFromAdmissionToInsulin							char(255),
+	PRIMARY KEY (id)
+);
+

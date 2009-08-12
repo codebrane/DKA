@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "DKA Database"
+AuthUserFile /WWW/dcs/htdocs/dka/.users
+require valid-user
